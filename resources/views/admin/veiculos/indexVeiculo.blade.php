@@ -19,4 +19,5 @@
         </form>
         -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-<br>  
 @endforeach
-<a href="{{ route('veiculos.create') }}"><button>Add new veiculo</button></a><br>
+<a href="{{ route('veiculos.create') }}"><button>Add new veiculo</button></a>
+<a href="{{route('dashboard')}}"><button>Home</button></a><br/>
