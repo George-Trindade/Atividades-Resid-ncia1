@@ -15,15 +15,17 @@ class CreateVeiculosTable extends Migration
     {
         Schema::create('veiculos', function (Blueprint $table) {
             $table->id();
+            $table->string('modelo');
+            $table->string('marca');
+            $table->string('ano');
+            $table->string('placa');
+            $table->string('cor');
             $table->timestamps();
         });
+
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+    
     public function down()
     {
         Schema::dropIfExists('veiculos');

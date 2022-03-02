@@ -21,8 +21,9 @@ class ClientesController extends Controller
     {
         
         $clientes= Cliente::create($request->all());
-        return redirect()->route('clientes.index');
-        //return "Criado com sucesso!";
+        return redirect()
+        ->route('clientes.index')
+        ->with('message','Alterado com Sucesso!');
     }
 
    
